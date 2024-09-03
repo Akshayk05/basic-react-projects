@@ -21,13 +21,13 @@ function App() {
          shadow-sm 
          hover:bg-slate-100 
           transform transition-transform duration-500 hover:scale-110 ease-in-out
-          ' >
+          'onClick={()=>setCount(count+1)} >
           Increase
         </button>
-        <button className=' border-2 border-black mx-6 px-6 rounded-lg shadow-black shadow-sm hover:bg-slate-100 ease-in-out transform transition-transform duration-500 hover:scale-110 '>
+        <button className=' border-2 border-black mx-6 px-6 rounded-lg shadow-black shadow-sm hover:bg-slate-100 ease-in-out transform transition-transform duration-500 hover:scale-110 ' onClick={()=>setCount(0)}>
           Reset
         </button>
-        <button className='border-2 border-black px-6 rounded-lg shadow-black shadow-sm hover:bg-slate-100 transform transition-transform duration-500 hover:scale-110 ease-in-out'>
+        <button className='border-2 border-black px-6 rounded-lg shadow-black shadow-sm hover:bg-slate-100 transform transition-transform duration-500 hover:scale-110 ease-in-out'onClick={()=>setCount(count-1)}>
           Decrease
         </button>
       </div>
